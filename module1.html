@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 - SkillParkho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2d89ef;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1; /* Ensures the dropdown appears above other content */
+            margin-top: 5px; /* Space between the button and dropdown */
+        }
+
+        /* Show the dropdown when hovering */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .video-card h3 {
+            margin: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .video-card a {
+            display: block;
+            margin: 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            background: #2d89ef;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .video-card a:hover {
+            background: #2764b0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: #2d89ef;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SkillParkho</div>
+        <nav>
+            <a href="admin2.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+
+            <!-- Dropdown for Modules -->
+            <div class="dropdown">
+                <a href="#">Modules</a>
+                <div class="dropdown-content">
+                    <a href="module1.html">Module 1: Basics of Programming</a>
+                    <a href="module2.html">Module 2: Variables</a>
+                    <a href="module3.html">Module 3: Conditionals</a>
+                    <a href="module4.html">Module 4: Loops</a>
+                    <a href="module5.html">Module 5: Functions</a>
+                    <a href="module6.html">Module 6: Arrays</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Module 1: Introduction to Programming</h1>
+        <p>Welcome to Module 1. Please complete all videos, assignments, and the final test to unlock the next module.</p>
+
+        <div class="video-section">
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x200" alt="Video 1">
+                <h3>Video 1: Basics of Programming</h3>
+                <a href="#">Watch Video</a>
+            </div>
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x200" alt="Video 2">
+                <h3>Video 2: Variables and Data Types</h3>
+                <a href="#">Watch Video</a>
+            </div>
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x200" alt="Video 3">
+                <h3>Video 3: Conditional Statements</h3>
+                <a href="#">Watch Video</a>
+            </div>
+        </div>
+
+        <h2>Assignments</h2>
+        <ul>
+            <li><a href="#">Assignment 1: Basics</a></li>
+            <li><a href="#">Assignment 2: Data Types</a></li>
+            <li><a href="#">Assignment 3: Conditionals</a></li>
+        </ul>
+
+        <h2>Final Test</h2>
+        <a href="#" style="display: inline-block; padding: 10px 20px; background: #2d89ef; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">Take Test</a>
+    </div>
+
+    <footer>
+        &copy; 2024 SkillParkho. All Rights Reserved.
+    </footer>
+</body>
+</html>
